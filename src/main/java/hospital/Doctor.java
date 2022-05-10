@@ -20,4 +20,10 @@ public class Doctor {
         sickPatient.decreaseBloodLevel(5);
 
     }
+
+    public int calculatePay() {
+        return 90000;
+
+
+    }
 }

@@ -24,5 +24,12 @@ public class DoctorTest {
         assertEquals(15, bloodLevel);
     }
 
+    @Test
+    public void shouldExpectSalaryOf90k(){
+      int salary = underTest.calculatePay();
+      assertEquals(90000, salary);
+
+    }
+
 
 }
