@@ -24,4 +24,6 @@ public class Doctor extends HospitalEmployee implements MedicalDuties {
     public int calculatePay() {
         return 90000;
     }
+
+
 }

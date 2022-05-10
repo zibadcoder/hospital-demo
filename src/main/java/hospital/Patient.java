@@ -6,15 +6,29 @@ public class Patient {
     private int healthLevel;
     private int bloodLevel;
 
-    // default constructor
-    public Patient() {
-        this.healthLevel = 10; //default patient healthLevel
-        this.bloodLevel = 20; //default blood level of patient
-    }
 
     public int getHealthLevel() {
 
         return healthLevel;
+
+    }
+
+    public int getBloodLevel() {
+        return bloodLevel;
+    }
+
+    // default constructor
+    public Patient() {
+        this(10, 20);
+//        healthLevel = 10; //default patient healthLevel
+//        bloodLevel = 20; //default blood level of patient
+
+    }
+
+    public Patient(int healthLevel, int bloodLevel) {
+        this.healthLevel = healthLevel;
+        this.bloodLevel = bloodLevel;
+
 
     }
 
@@ -23,9 +37,6 @@ public class Patient {
 
     }
 
-    public int getBloodLevel() {
-        return bloodLevel;
-    }
 
     public void decreaseBloodLevel(int bloodDecreaseAmount) {
         bloodLevel -= bloodDecreaseAmount;
