@@ -15,4 +15,9 @@ public class Doctor {
 
 
     }
+
+    public void drawBlood(Patient sickPatient) {
+        sickPatient.decreaseBloodLevel(5);
+
+    }
 }
